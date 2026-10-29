@@ -1,0 +1,9 @@
+# Normalize to LF so install.sh keeps a working shebang on every clone.
+* text=auto eol=lf
+
+# Windows shell/PS keep CRLF.
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Release payload — never touch.
+*.zip binary
